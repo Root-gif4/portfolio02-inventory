@@ -1,0 +1,40 @@
+# 画面の設定（Streamlit）
+
+[server]
+# このPCの中からだけ開ける（ほかのPCからはつながらない）
+address = "127.0.0.1"
+port = 8501
+# 初回の「メールアドレスを入力」の質問を出さない（ブラウザは start.bat が開く）
+headless = true
+# 取り込める CSV の大きさ（MB）
+maxUploadSize = 5
+runOnSave = false
+
+[browser]
+gatherUsageStats = false
+serverAddress = "localhost"
+
+[client]
+# 想定外のエラーの詳しい内容（プログラムの場所など）を画面に出さない。詳しくは data/logs/app.log
+showErrorDetails = "none"
+# viewer：開発者向けの項目を隠し、「Settings」（明るさの切り替え）は残す
+toolbarMode = "viewer"
+
+[runner]
+magicEnabled = false
+
+[theme]
+font = "sans-serif"
+baseRadius = "medium"
+
+[theme.light]
+primaryColor = "#1f6feb"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f3f6fa"
+textColor = "#1f2533"
+
+[theme.dark]
+primaryColor = "#4c8dff"
+backgroundColor = "#0e1117"
+secondaryBackgroundColor = "#1a1f2b"
+textColor = "#e6e8ee"
